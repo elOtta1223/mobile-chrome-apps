@@ -23,11 +23,11 @@
   "dependencies": {
     "cca-manifest-logic": "^1.1.5",
     "chrome-app-developer-tool-client": "^0.0.5",
-    "cordova": "^5.4.0",
+    "cordova": "^9.0.0",
     "crypto-js": "^3.1.4",
     "debounce": "^1.0.0",
     "elementtree": "0.1.6",
-    "gaze": "^0.5.1",
+    "gaze": "^1.1.0",
     "node-uuid": "^1.4.1",
     "node.extend": "",
     "optimist": "~0.6.1",
@@ -36,7 +36,8 @@
     "shelljs": "^0.4.0",
     "underscore": "^1.7.0",
     "update-notifier": "^0.5.0",
-    "xmldom": "^0.1.19"
+    "xmldom": "^0.1.19",
+    "snyk": "^1.161.1"
   },
   "files": [
     "README.md",
@@ -55,6 +56,9 @@
     "walk": "^2.3.3"
   },
   "scripts": {
-    "test": "gulp test"
-  }
+    "test": "gulp test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
