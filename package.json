@@ -23,7 +23,7 @@
   "dependencies": {
     "cca-manifest-logic": "^1.1.5",
     "chrome-app-developer-tool-client": "^0.0.5",
-    "cordova": "^5.4.0",
+    "cordova": "^8.1.0",
     "crypto-js": "^3.1.4",
     "debounce": "^1.0.0",
     "elementtree": "0.1.6",
